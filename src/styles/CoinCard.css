@@ -1,0 +1,43 @@
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+   
+    100% {
+      opacity: 1;
+    }
+  
+  }
+  
+  @keyframes spin {
+    0% {
+      rotate: 0;
+    }
+    50% {
+      rotate: 30deg;
+    }
+   
+  
+  }
+  .coinCardContainer {
+    animation: fadeIn 1s ease-in-out;
+    border: 1px solid #ccc;
+    margin: 2% auto;
+    padding: 10px;
+    width: 94%;
+    height : 25%;
+  }
+  
+  @media (max-width: 600px) {
+    .CoinCard {
+      width: 90%; /* Make it full width on smaller screens */
+      margin: 10%;
+    }
+  }
+  
+  .coincardimage {
+    width: 30%;
+    height: 30%;
+    animation: spin 1s ease-out;
+  }
